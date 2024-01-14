@@ -1,0 +1,9 @@
+.header-text{
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  color: #e11d48;
+}
+
+
+
