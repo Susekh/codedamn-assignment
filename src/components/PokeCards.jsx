@@ -4,6 +4,7 @@ import '../styles/pokeCardsStyle.css'
 function PokeCards(props) {
 	const pokeName = props.pokeName
 	const [pokeData, setPokeData] = useState(null)
+	const handleClick = props.handleClick;
 
 	// Fetching datas for cards (image, weight , height)
 	useEffect(() => {
@@ -28,7 +29,7 @@ function PokeCards(props) {
 	return (
 		<>
 			{pokeData ? (
-				<div id={pokeName}>
+				<div id={pokeName} onClick={handleClick}>
 					<div>
 						<div className="cards">
 								{/* Display the Pokemon image */}
