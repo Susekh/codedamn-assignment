@@ -1,9 +1,14 @@
+import GamePart from './components/GamePart';
 import './styles/App.css'
 
 function App(){
   return (
     <>
-      <div className="header-text"><h1>Pokemon Memory Game</h1></div>
+      <h3 className="header-text">Pokemon Card Game</h3>
+        
+      <div className="main-content-part">
+        <GamePart />
+      </div>
     </>
   )
 }
